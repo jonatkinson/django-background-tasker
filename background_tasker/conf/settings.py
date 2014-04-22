@@ -1,0 +1,5 @@
+from django.conf import settings
+
+BACKGROUND_TASKER_URL = getattr(settings, 'BACKGROUND_TASKER_URL', 'tcp://127.0.0.1:5555')
+BACKGROUND_TASKER_ALWAYS_EAGER = getattr(settings, 'BACKGROUND_TASKER_ALWAYS_EAGER', False)
+BACKGROUND_TASKER_DISABLED = getattr(settings, 'BACKGROUND_TASKER_DISABLED', False)
